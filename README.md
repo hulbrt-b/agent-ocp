@@ -10,6 +10,7 @@ cat pull-secret.txt | jq -c .
 
 jq . pull-secret.txt > pull-secret.json
 
+echo -n '<user_name>:<password>' | base64 -w0
 
 #DNSMASQ example
 interface=eno1
